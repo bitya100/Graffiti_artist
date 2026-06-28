@@ -5,17 +5,19 @@ export default function Footer() {
     <footer className="bg-black text-white p-12 mt-20">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         
-        {/* עכשיו התיבה הזו תופיע בצד ימין (החתימה) */}
+        {/* הנה החתימה מהענן עם התיקון */}
         <div className="w-32 h-32 relative">
           <Image 
-            src="/signature.png" 
+            src="https://res.cloudinary.com/dtxm5hz1m/image/upload/v1782643791/signature_n9huop.png" 
             alt="חתימת האומן"
             fill
             className="object-contain"
+            unoptimized
+            priority // <--- זה התיקון שפותר את האזהרה
           />
         </div>
 
-        {/* עכשיו הקישורים יופיעו בצד שמאל */}
+        {/* הקישורים נשארו כפי שהיו */}
         <div className="flex flex-col gap-4 text-left">
           <h3 className="text-sm font-bold tracking-widest text-gray-400">SOCIAL</h3>
           <a href="#" className="hover:underline">Youtube</a>
